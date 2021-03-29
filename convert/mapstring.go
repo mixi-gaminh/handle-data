@@ -31,7 +31,7 @@ func ToSliceMapString(data interface{}) ([]map[string]interface{}, error) {
 		if !ok {
 			typeData := ""
 			typeData = fmt.Sprintf("%v", reflect.TypeOf(t))
-			return nil, errors.New(`data[` + strconv.Itoa(index) + `] is ` + typeData + ` not ap[string]interface{}`)
+			return nil, errors.New(`data[` + strconv.Itoa(index) + `] is ` + typeData + ` not map[string]interface{}`)
 		}
 		ret = append(ret, t)
 	}
