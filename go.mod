@@ -1,4 +1,4 @@
-module github.com/mixi-gaming/handle-data
+module github.com/mixi-gaminh/handle-data
 
 go 1.16
 

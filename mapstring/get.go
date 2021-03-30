@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/mixi-gaming/handle-data/convert"
+	"github.com/mixi-gaminh/handle-data/convert"
 )
 
 func GetInt(data map[string]interface{}, keys ...string) (int, error) {

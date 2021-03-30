@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mixi-gaming/handle-data/mapstring"
+	"github.com/mixi-gaminh/handle-data/mapstring"
 )
 
 type Teststruct struct {
