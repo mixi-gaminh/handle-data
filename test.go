@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mixi-gaminh/handle-data/mapstring"
+	"github.com/mixi-gaminh/handle-data/jsonparse"
 )
 
 type Teststruct struct {
@@ -14,7 +14,7 @@ type Teststruct struct {
 func main() {
 	data := map[string]interface{}{
 		"string": nil,
-		"list":   []interface{}{"1234", 3124},
+		"list":   []int{1234, 3124},
 		"mapstring": map[string]interface{}{
 			"test": "134",
 		},
@@ -49,7 +49,7 @@ func main() {
 	// fmt.Println(convert.ToFloat64(b))
 
 	fmt.Print("Get string: ")
-	fmt.Println(mapstring.GetString(data, "string", "int", "cd"))
+	fmt.Println(jsonparse.GetSlice(data, "list"))
 	// fmt.Print("To slice map string: ")
 	// fmt.Println(convert.ToMapString(data["mapstring"]))
 	// fmt.Print("To slice map string: ")
